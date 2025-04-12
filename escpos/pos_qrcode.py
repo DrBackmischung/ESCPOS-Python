@@ -1,5 +1,5 @@
-from src.pos_component import POSComponent
-from src.constants import POSCommand, POSQRCodeSize, POSQRCodeErrorCorrection
+from escpos.pos_component import POSComponent
+from escpos.constants import POSCommand, POSQRCodeSize, POSQRCodeErrorCorrection
 
 class POSQRCode(POSComponent):
     def __init__(self, builder):

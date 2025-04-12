@@ -1,6 +1,6 @@
-from src.pos_document import POSDocument
-from src.pos_text import POSTextBuilder
-from src.constants import POSPrintStyle, POSTextAlignment
+from escpos.pos_document import POSDocument
+from escpos.pos_text import POSTextBuilder
+from escpos.constants import POSPrintStyle, POSTextAlignment
 
 class POSReceipt(POSDocument):
     pass

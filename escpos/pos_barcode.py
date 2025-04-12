@@ -1,5 +1,5 @@
-from src.pos_component import POSComponent
-from src.constants import POSCommand, POSBarcodeType, POSBarcodeWidth
+from escpos.pos_component import POSComponent
+from escpos.constants import POSCommand, POSBarcodeType, POSBarcodeWidth
 
 class POSBarcode(POSComponent):
     def __init__(self, builder):

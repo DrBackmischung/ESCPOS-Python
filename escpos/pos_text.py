@@ -1,5 +1,5 @@
-from src.pos_component import POSComponent
-from src.constants import POSCommand, POSPrintStyle, POSTextAlignment
+from escpos.pos_component import POSComponent
+from escpos.constants import POSCommand, POSPrintStyle, POSTextAlignment
 
 class POSText(POSComponent):
     def __init__(self, builder):

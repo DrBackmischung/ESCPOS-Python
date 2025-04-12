@@ -1,8 +1,8 @@
-from src.pos_component import POSComponent
-from src.constants import POSCommand
-from src.pos_text import POSTextBuilder
-from src.constants import POSPrintStyle, POSTextAlignment
-from src.pos_linefeed import POSLineFeed
+from escpos.pos_component import POSComponent
+from escpos.constants import POSCommand
+from escpos.pos_text import POSTextBuilder
+from escpos.constants import POSPrintStyle, POSTextAlignment
+from escpos.pos_linefeed import POSLineFeed
 
 class POSDocument(POSComponent):
     def __init__(self):

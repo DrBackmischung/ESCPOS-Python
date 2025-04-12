@@ -1,4 +1,4 @@
-from src.pos_printer_interface import POSPrinterInterface
+from escpos.pos_printer_interface import POSPrinterInterface
 
 class POSPrinterMock(POSPrinterInterface):
     def __init__(self):

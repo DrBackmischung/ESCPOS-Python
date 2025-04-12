@@ -1,5 +1,5 @@
-from src.pos_component import POSComponent
-from src.constants import POSCommand
+from escpos.pos_component import POSComponent
+from escpos.constants import POSCommand
 
 class POSLineFeed(POSComponent):
     def __init__(self, count: int = 1):
