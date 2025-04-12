@@ -51,6 +51,7 @@ receipt = (
     .add_component(POSTextBuilder("Center").set_alignment(POSTextAlignment.CENTER).build())
     .add_component(POSTextBuilder("Right").set_alignment(POSTextAlignment.RIGHT).build())
     .add_component(POSTextBuilder("Bold").set_style(POSPrintStyle.BOLD).build())
+    .add_component(POSTextBuilder("Underlined").set_style(POSPrintStyle.UNDERLINE).build())
     .add_item("Item A", 3.5)
     .add_item("Item B", 5.0)
     .add_component(
