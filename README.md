@@ -108,7 +108,7 @@ print("Printed buffers:", len(mock.get_printed_data()))
 
 ## 📣 Feature Request?
 
-This repository is only for **bug reports and maintenance** related to the [language-specific implementation](https://github.com/DrBackmischung).
+This repository is only for **bug reports and maintenance** related to the language-specific implementation.
 
 Please open all **feature requests, enhancements, and cross-language discussions** in the **central repository**:  
 
