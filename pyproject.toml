@@ -1,6 +1,6 @@
 [project]
 name = "escpos-python"
-version = "1.0.0"
+version = "1.0.2"
 description = "ESC/POS receipt printing library in pure Python"
 authors = [
     { name="Mathis Neunzig", email="mathis.neunzig@gmail.com" }
