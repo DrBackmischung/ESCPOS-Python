@@ -1,8 +1,11 @@
 import platform
 import subprocess
-from src.pos_printer_interface import POSPrinterInterface
-from src.pos_config import is_printing_disabled
 from tempfile import NamedTemporaryFile
+from typing import Optional
+
+from escpos.pos_printer_interface import POSPrinterInterface
+from escpos.pos_config import is_printing_disabled
+
 
 class POSPrinter(POSPrinterInterface):
     def __init__(self, printer_name: str):
@@ -30,7 +33,7 @@ class POSPrinter(POSPrinterInterface):
             except subprocess.CalledProcessError as e:
                 print(f"[ESC/POS] Printing failed: {e}")
 
-    def _build_command(self, file_path: str) -> str | None:
+    def _build_command(self, file_path: str) -> Optional[str]:
         system = platform.system()
         if system == "Windows":
             return f'print /D:"{self.printer_name}" "{file_path}"'
