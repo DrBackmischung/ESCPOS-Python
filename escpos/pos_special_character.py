@@ -1,14 +1,15 @@
+from typing import Optional
+
 def _b(val):
     return val if isinstance(val, bytes) else str(val).encode("ascii")
 
 POS_SPECIAL_CHARACTER = {
-    "USD": bytes([0x24]),          # Dollar $
+    "USD": bytes([0x24]),
     "EUR": _b("EUR"),
-    "GBP": bytes([0x9C]),          # Pound £
-    "JPY": bytes([0x9D]),          # Yen ¥
+    "GBP": bytes([0x9C]),
+    "JPY": bytes([0x9D]),
     "CHF": _b("CHF"),
     "CNY": bytes([0x9D]),
-
     "INR": _b("INR"),
     "RUB": _b("RUB"),
     "BRL": _b("R$"),
@@ -52,5 +53,5 @@ POS_SPECIAL_CHARACTER = {
     "UYU": _b("$U"),
 }
 
-def get_special_char_buffer(key: str) -> bytes | None:
+def get_special_char_buffer(key: str) -> Optional[bytes]:
     return POS_SPECIAL_CHARACTER.get(key.upper())
